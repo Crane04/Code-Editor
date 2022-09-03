@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <h1>Craennie Text Editor</h1>
+   <div class="buttons">
+        <div id="selection">
+            <label for="check1"> <button>V</button></label>
+            <input type="checkbox" id="check1">
+            <div class="selection">
+                
+                    <li onclick="displayHTML()"><a href="#item1">HTML</a></li>
+                    <li onclick="displayCSS()"><a href="#item1">CSS</a></li>
+                    <li onclick="displayJS()"><a href="#item3">JS</a></li>
+                
+            </div>
+        </div>
+<!----         <div>
+            <button>Clear</button>
+        </div>---->
+
+        <div>
+           <label for="check2"> <button>Download</button></label>
+           <input type="checkbox" id="check2">
+            <div class="download-options">
+                
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>All</li>
+                
+            </div>
+        </div>
+    <a href="#code"><button onclick="result()">Result</button></a></div>
+</header>
+    <div class="container">
+        <div class="block item1" id="item1">
+            <textarea class="html" placeholder="HTML" spellcheck="false"></textarea>
+        </div>
+
+        <div class="block item2" id="item2">
+            <textarea class="css" placeholder="CSS" spellcheck="false"></textarea>
+        </div>
+
+        <div class="block item3" id="item3">
+            <textarea class="js" placeholder="Javascript" spellcheck="false"></textarea>
+        </div>
+    </div><br>
+
+    
+        <iframe  id="code"></iframe>
+    
+
+    <script src="script.js"></script>
+    <script src="download.js"></script>
+</body>
+</html>

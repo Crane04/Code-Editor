@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ddd;
+}
+.container{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+}
+.block{
+    height: 70vh;
+    width: 30%;
+    margin-right: 15px;
+}
+textarea{
+    height: 100%;
+    resize: none;
+    padding: 15px;
+    background-color: #eee;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 95%;
+    color: blue;
+}
+h1{
+    color: white;
+    display: inline-block;
+    margin: 40px 50px;
+    text-align: left;
+    
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    background-color: #00f;
+    margin-top: -26px;
+    top :0;
+    height: 130px;
+    margin-bottom: 30px;
+}
+header button{
+    background:white;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5) ;
+    margin: 4px;
+    font-weight: bold;
+}
+
+header button:hover{
+    background-color: #ddd;       
+}
+iframe{
+    height: fit-content;
+    background-color: white;
+    min-height: 50vh;
+    margin: auto;
+    display: block;
+    width: 85%;
+    border: none;
+    margin-top: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -90px;
+    margin-right:45px;
+    
+}
+.buttons input+.download-options,.buttons input+.selection{
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.5);
+    padding: 15px;
+    border-radius:5px;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid blue;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+li:hover{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 3px;
+}
+#selection{
+    display: none;
+}
+#check2,#check1{
+    display: none;
+}
+#check2:checked~.download-options{
+    display: block;
+}
+@media(max-width:750px){
+    h1{
+        font-size: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    #selection{
+    display: inline-block;
+    font-size:small;
+}        
+
+
+#check1:checked~.selection{
+    display:block;
+
+}
+     
+header{
+    width: 100%;
+    position: sticky;
+    background-color: #00f;
+    margin-top: 0px;
+    top :0;
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -30px;
+    margin-right:45px;
+}
+.item2,.item3{
+    display: none;
+    width: 90%;
+}
+.item1{
+    display: block;
+    width: 90%;
+}
+li a{
+    text-decoration: none;
+    color:blue;
+
+}
+
+}
